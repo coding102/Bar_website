@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <script src="javascript/index.js"></script>
+    <script src="javascript/jquery.simple-text-rotator.js"></script>
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/simpletextrotator.css">
+    <script src="javascript/vidbg.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/icons.css" />
+		  <link rel="stylesheet" type="text/css" href="css/style3.css" />
+		  <script src="javascript/modernizr.custom.js"></script>
+    
+</head>
+
+<body>
+    
+        <p id="text">
+            <span class="rotate">Something for Everyone, Something, for, Everyone</span>
+        </p>    
+    
+    
+        <div class="container">
+			
+			         <nav id="bt-menu" class="bt-menu">
+				        <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+				            <ul>
+					               <li><a href="home" class="bt-icon icon-user-outline">Home</a></li>
+					               <li><a href="menu" class="bt-icon icon-sun">Menu</a></li>
+					               <li><a href="events" class="bt-icon icon-windows">Events</a></li>
+					               <li><a href="bar" class="bt-icon icon-speaker">Bar</a></li>
+					               <li><a href="dining" class="bt-icon icon-star">Dining</a></li>
+					               <li><a href="contact" class="bt-icon icon-bubble">Contact</a></li>
+				            </ul>
+			         </nav>
+            
+		      </div><!-- /container -->    
+    
+    
+        <script>
+
+            $(".rotate").textrotator({
+            animation: "dissolve", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+            separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+            speed: 2000 // How many milliseconds until the next word show.
+        });    
+    
+        </script>
+    
+        <script type="text/javascript">
+        
+            jQuery(function($){
+            $('body').vidbg({
+                'mp4': 'video/bar.mp4',
+                'webm': 'video/bar.webm',
+                'poster': 'images/bar.jpg',
+            }, {
+            // Options
+                muted: true,
+                loop: true,
+                overlay: true,
+            });
+        });
+
+        </script>
+
+    <script src="javascript/vidbg.js"></script>
+
+</body>
+    
+    <script src="javascript/classie.js"></script>
+	   <script src="javascript/borderMenu.js"></script>
+    
+</html>
+
